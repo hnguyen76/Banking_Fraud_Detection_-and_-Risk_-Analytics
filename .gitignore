@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 .streamlit/secrets.toml
 .venv/
+.bankingvenv/
 venv/
 env/
 .DS_Store

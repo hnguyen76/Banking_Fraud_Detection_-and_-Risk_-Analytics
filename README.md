@@ -23,12 +23,25 @@ streamlit run dashboard.py
 
 Open the local Streamlit URL in your browser. The dashboard reads `banking_transactions.csv` from the project root.
 
+## Notebook Environment
+
+```powershell
+python -m venv .bankingvenv
+.\.bankingvenv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name banking-risk --display-name "Banking Risk Analytics"
+```
+
+Then open `notebooks/Banking_Fraud_Risk_Analytics_Workflow.ipynb` and select the `Banking Risk Analytics` kernel.
+
 ## Repository Structure
 
 ```text
 .
 |-- banking_transactions.csv
 |-- dashboard.py
+|-- notebooks/
+|   `-- Banking_Fraud_Risk_Analytics_Workflow.ipynb
 |-- reports/
 |   `-- Banking_Fraud_Risk_Analytics_Report.md
 |-- requirements.txt
