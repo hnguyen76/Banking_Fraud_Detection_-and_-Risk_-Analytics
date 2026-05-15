@@ -23,6 +23,19 @@ streamlit run dashboard.py
 
 Open the local Streamlit URL in your browser. The dashboard reads `banking_transactions.csv` from the project root.
 
+## Deploy To Streamlit Community Cloud
+
+Use these settings at `https://share.streamlit.io`:
+
+```text
+Repository: hnguyen76/Banking_Fraud_Detection_-and_-Risk_-Analytics
+Branch: main
+Main file path: streamlit_app.py
+Python version: 3.12
+```
+
+Streamlit Community Cloud will install dependencies from `requirements.txt` and load `banking_transactions.csv` from the repository root.
+
 ## Notebook Environment
 
 ```powershell
@@ -40,6 +53,7 @@ Then open `notebooks/Banking_Fraud_Risk_Analytics_Workflow.ipynb` and select the
 .
 |-- banking_transactions.csv
 |-- dashboard.py
+|-- streamlit_app.py
 |-- notebooks/
 |   `-- Banking_Fraud_Risk_Analytics_Workflow.ipynb
 |-- reports/
